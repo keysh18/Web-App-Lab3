@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="JS\Lab-3.js"></script>
+		<link rel="stylesheet" href = "StyleSheet\Lab-3Style.css">
+	</head>
+	<body>
+		<center><img src = "img\Logo.png" height = "100px" width = "100px" class="center"></center>
+		<div class="cart1" id="mycart">
+			<div id="mycart" class="cartcount"> </div>
+			<img src="img/cart.jpg" />
+		</div>
+		
+		<ul>
+			<center>
+				<li class="menu-item"><a href="#" class="drp">Electronics</a>
+				<div class="menu-content">
+					<a href="#">Gaming Mouse</a><br>
+					<a href="#">Samsung Galaxy S23</a><br>
+					<a href="#">Clock</a><br>
+					<a href="#">Remote Control Car</a><br>
+				</div>
+				</li>
+				
+				
+				<li class="menu-item"><a href="#" class="drp">Clothing</a>	
+				<div class="menu-content">
+					<a href="#">Blazers</a><br>
+					<a href="#">Nasa Sweatshirt</a><br>
+				</div>
+				</li>
+
+				<li class="menu-item"><a href="#" class="drp">miscellaneous</a>	
+				<div class="menu-content">
+					<a href="#">Bouncy House</a><br>
+					<a href="#">Gaming Chair</a><br>
+					<a href="#">Frisbee</a><br>
+					<a href="#">Water Bottle</a><br>
+				</div>
+				</li>
+			</center>	
+		</ul>
+		
+		
+		<img src = "img\bouncyHouse1.jpg" height = "400px" width = "500px" onclick = "showOver('bouncyHouse', 'fade1')">
+		<img src = "img\gamingChair.jpg" height = "450px" width = "400px" onclick = "showOver('gamingChair', 'fade2')">
+		<img src = "img\GalaxyS23.webp" height = "450px" width = "325px" onclick = "showOver('GalaxyS23', 'fade3')">
+		<img src = "img\gamingMouse.jpg" height = "400px" width = "500px" onclick = "showOver('gamingMouse', 'fade4')">
+		<img src = "img\blazers.webp" height = "450px" width = "400px" onclick = "showOver('blazers', 'fade5')">
+		<img src = "img\Clock.jpg" height = "500px" width = "500px" onclick = "showOver('Clock', 'fade6')">
+		<img src = "img\remoteControlCar.webp" height = "450px" width = "400px" onclick = "showOver('remoteControlCar', 'fade7')">
+		<img src = "img\nasaSweatshirt.jpg" height = "500px" width = "500px" onclick = "showOver('nasaSweatshirt', 'fade8')">
+		<img src = "img\Frisbee.jpg" height = "500px" width = "500px" onclick = "showOver('Frisbee', 'fade9')">
+		<img src = "img\waterBottle.jpg" height = "500px" width = "500px" onclick = "showOver('waterBottle', 'fade10')">
+		
+		
+		
+		<div id="bouncyHouse" class="white_content">
+			<table border="0" align="center" width="100%">
+				<tr>
+					<td width="50%"><img src = "img\bouncyHouse1.jpg" width=60%></td>
+					<td width="50%"><font size="+2">Bouncy House</font><br>
+									Price: $500<br>
+									Free Shipping<br>
+									<button id="addText" onclick="addToCart('Bouncy House')"> Add to Cart </button><br>
+									</td>
+				</tr>
+			</table>
+			<center align = "bottom">
+				<button name="Exit" id = "Exit" value = "Back" onclick = "exit('bouncyHouse', 'fade1')">Back</td>
+			</center>
+		</div>
+		<div id="fade1" class="black_content"></div>
+		
+		<div id="gamingChair" class="white_content">
+			<table border="0" align="center" width="100%">
+				<tr>
+					<td width="50%"><img src = "img\gamingChair.jpg" width=50% height=70%></td>
+					<td width="50%"><font size="+2">Gaming Chair</font><br>
+									Price: $300<br>
+									Shipping: $50<br>
+									<button id="addText" onclick="addToCart('Gaming Chair')"> Add to Cart </button><br>
+									</td>
+				</tr>
+			</table>
+			<center align = "bottom">
+				<button name="Exit" id = "Exit" value = "Back" onclick = "exit('gamingChair', 'fade2')">Back</td>
+			</center>
+		</div>
+		<div id="fade2" class="black_content"></div>
+		
+		<div id="GalaxyS23" class="white_content">
+			<table border="0" align="center" width="100%">
+				<tr>
+					<td width="50%"><img src = "img\GalaxyS23.webp" width=40% height=60%></td>
+					<td width="50%"><font size="+2">Samsung Galaxy S23</font><br>
+									Price: $800<br>
+									Shipping: $20<br>
+									<button id="addText" onclick="addToCart('Samsung Galaxy S23')"> Add to Cart </button><br>
+									</td>
+				</tr>
+			</table>
+			<center align = "bottom">
+				<button name="Exit" id = "Exit" value = "Back" onclick = "exit('GalaxyS23', 'fade3')">Back</td>
+			</center>
+		</div>
+		<div id="fade3" class="black_content"></div>
+		
+		<div id="gamingMouse" class="white_content">
+			<table border="0" align="center" width="100%">
+				<tr>
+					<td width="50%"><img src = "img\gamingMouse.jpg" width=60% height=80%></td>
+					<td width="50%"><font size="+2">Gaming Mouse</font><br>
+									Price: $100<br>
+									Free Shipping<br>
+									<button id="addText" onclick="addToCart('Gaming Mouse')"> Add to Cart </button><br>
+									</td>
+				</tr>
+			</table>
+			<center align = "bottom">
+				<button name="Exit" id = "Exit" value = "Back" onclick = "exit('gamingMouse', 'fade4')">Back</td>
+			</center>
+		</div>
+		<div id="fade4" class="black_content"></div>
+		
+		<div id="blazers" class="white_content">
+			<table border="0" align="center" width="100%">
+				<tr>
+					<td width="50%"><img src = "img\blazers.webp" width=48% height=68%></td>
+					<td width="50%"><font size="+2">Nike Blazers</font><br>
+									Price: $120<br>
+									Free Shipping<br>
+									<button id="addText" onclick="addToCart('Nike Blazers')"> Add to Cart </button><br>
+									</td>
+				</tr>
+			</table>
+			<center align = "bottom">
+				<button name="Exit" id = "Exit" value = "Back" onclick = "exit('blazers', 'fade5')">Back</td>
+			</center>
+		</div>
+		<div id="fade5" class="black_content"></div>
+		
+		<div id="Clock" class="white_content">
+			<table border="0" align="center" width="100%">
+				<tr>
+					<td width="50%"><img src = "img\Clock.jpg" width=50% height=50%></td>
+					<td width="50%"><font size="+2">Clock</font><br>
+									Price: $20<br>
+									Free Shipping<br>
+									<button id="addText" onclick="addToCart('Clock')"> Add to Cart </button><br>
+									</td>
+				</tr>
+			</table>
+			<center align = "bottom">
+				<button name="Exit" id = "Exit" value = "Back" onclick = "exit('Clock', 'fade6')">Back</td>
+			</center>
+		</div>
+		<div id="fade6" class="black_content"></div>
+		
+		<div id="remoteControlCar" class="white_content">
+			<table border="0" align="center" width="100%">
+				<tr>
+					<td width="50%"><img src = "img\remoteControlCar.webp" width=50% height=50%></td>
+					<td width="50%"><font size="+2">Remote Control Car</font><br>
+									Price: $80<br>
+									Free Shipping<br>
+									<button id="addText" onclick="addToCart('Remote Control Car')"> Add to Cart </button><br>
+									</td>
+				</tr>
+			</table>
+			<center align = "bottom">
+				<button name="Exit" id = "Exit" value = "Back" onclick = "exit('remoteControlCar', 'fade7')">Back</td>
+			</center>
+		</div>
+		<div id="fade7" class="black_content"></div>
+		
+		<div id="nasaSweatshirt" class="white_content">
+			<table border="0" align="center" width="100%">
+				<tr>
+					<td width="50%"><img src = "img\nasaSweatshirt.jpg" width=50% height=50%></td>
+					<td width="50%"><font size="+2">Nasa Sweatshirt</font><br>
+									Price: $50<br>
+									Free Shipping<br>
+									<button id="addText" onclick="addToCart('Nasa Sweatshirt')"> Add to Cart </button><br>
+									</td>
+				</tr>
+			</table>
+			<center align = "bottom">
+				<button name="Exit" id = "Exit" value = "Back" onclick = "exit('nasaSweatshirt', 'fade8')">Back</td>
+			</center>
+		</div>
+		<div id="fade8" class="black_content"></div>
+		
+		<div id="Frisbee" class="white_content">
+			<table border="0" align="center" width="100%">
+				<tr>
+					<td width="50%"><img src = "img\Frisbee.jpg" width=50% height=50%></td>
+					<td width="50%"><font size="+2">Frisbee</font><br>
+									Price: $10<br>
+									Shipping: $5<br>
+									<button id="addText" onclick="addToCart('Frisbee')"> Add to Cart </button><br>
+									</td>
+				</tr>
+			</table>
+			<center align = "bottom">
+				<button name="Exit" id = "Exit" value = "Back" onclick = "exit('Frisbee', 'fade9')">Back</td>
+			</center>
+		</div>
+		<div id="fade9" class="black_content"></div>
+		
+		<div id="waterBottle" class="white_content">
+			<table border="0" align="center" width="100%">
+				<tr>
+					<td width="50%"><img src = "img\waterBottle.jpg" width=50% height=50%></td>
+					<td width="50%"><font size="+2">WaterBottle</font><br>
+									Price: $40<br>
+									Shipping: $5<br>
+									<button id="addText" onclick="addToCart('WaterBottle')"> Add to Cart </button><br>
+									</td>
+				</tr>
+			</table>
+			<center align = "bottom">
+				<button name="Exit" id = "Exit" value = "Back" onclick = "exit('waterBottle', 'fade10')">Back</td>
+			</center>
+		</div>
+		<div id="fade10" class="black_content"></div>
+		
+	</body>
+</html>
